@@ -11,13 +11,20 @@
       <li class="nav-item">
         <a class="nav-link text-primary" routerLink="/login">Login</a>
       </li>
-
+      <li class="nav-item">
+        <a class="nav-link text-primary" [routerLink]="['curso', idCurso.value]">Curso com detalhe</a>
+      </li>
     </ul>
   </div>
 </nav>
 
 
 <div class="container">
+  <p> Entre com o id do curso </p>
+
+  <input #idCurso>
+
   <!-- Content here -->
   <router-outlet></router-outlet>
+
 </div>
